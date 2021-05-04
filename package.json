@@ -1,0 +1,17 @@
+{
+  "name": "testcafe-research",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "setup": "npm install",
+    "tests":  "testcafe chrome:headless,./src",
+    "homepage-test": "./node_modules/.bin/testcafe chrome ./src/homepage-tests.js",
+    "county-test": "./node_modules/.bin/testcafe chrome ./src/county-test.js",
+    "run-all-tests": "./node_modules/.bin/testcafe chrome /*.js"
+    
+  },
+  "dependencies": {
+    "testcafe": "^1.8.8"
+  },
+  "devDependencies": {}
+}
